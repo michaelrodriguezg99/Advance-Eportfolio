@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>David Bragg</title>
+  <title>Michael's E-portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
   <section id="landing-page" onmousemove="moveBackground(event)">
     <nav>
       <figure>
-        <img id="personal-logo" src="./assets/logo.svg" alt="">
+        <div id="personal-logo"></div>
       </figure>
       <ul class="nav__link--list">
         <li class="nav__link" onclick="toggleModal()">
@@ -57,23 +57,21 @@
     </nav>
     <header class="header">
       <div class="header__content">
-        <h1 class="title">Hey</h1>
-        <h1 class="title orange">I'm David.</h1>
+        <h1 class="title">Hi! Welcome to my </br> e-porfolio</h1>
+        <h1 class="title text__blue">My name is Michael.</h1>
         <p class="header__para">
-          I'm a <b class="orange">Frontend Software Engineer</b> with a strong passion for building web applications
-          with great user
-          experiences.
+          I'm a <b class="text__blue">strong frontend sofware developer.</b> With over 5+ years of experience in computer science.
           <br>
-          Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
+          Learn more about me <b class="text__blue click" onclick="toggleModal()">HERE</b>.
         </p>
         <div class="social__list">
-          <a href="https://www.linkedin.com/in/david-bragg-5b23a1176/" target="_blank" class="social__link click">
+          <a href="https://www.linkedin.com/in/michael-rodriguez-70a434240/" target="_blank" class="social__link click">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="https://github.com/davidbr4gg" target="_blank" class="social__link click">
+          <a href="https://github.com/michaelrodriguezg99" target="_blank" class="social__link click">
             <i class="fab fa-github"></i>
           </a>
-          <a href="./assets/David Bragg Resume.pdf" target="_blank" class="social__link click">
+          <a href="./assetS/Copia de Michael Rodriguez's resume.pdf" target="_blank" class="social__link click">
             <i class="fas fa-file-pdf"></i>
           </a>
         </div>
@@ -92,12 +90,12 @@
         <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
         <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
         <p class="modal__para">
-          I'm a 21 year-old Australian <b class="orange">frontend software engineer</b> with experience developing
-          websites for top-tech companies like <b class="orange">Google</b> and <b class="orange">Canva</b>.
+          I'm a 21 year-old Australian <b class="text__blue">frontend software engineer</b> with experience developing
+          websites for top-tech companies like <b class="text__blue">Google</b> and <b class="text__blue">Canva</b>.
           <br>
           I currently solve extremely difficult engineering
-          problems every day with <b class="orange">React</b>, <b class="orange">TypeScript</b> and <b
-            class="orange">MobX</b>
+          problems every day with <b class="text__blue">React</b>, <b class="text__blue">TypeScript</b> and <b
+            class="text__blue">MobX</b>
           in Canva's Video team.
         </p>
         <div class="modal__languages">
@@ -187,32 +185,41 @@
     <img src="./assets/semi circle.svg" class="shape shape--8">
   </section>
   <section id="projects">
-    <div class="container">
+    <div class="container__projects">
       <div class="row">
         <h1 class="section__title">
-          Here are some of my <span class="orange">projects</span>
+          These are some of my <span class="text__blue">projects</span>
         </h1>
         <ul class="project__list">
           <li class="project">
             <div class="project__wrapper">
-              <img src="./assets/google mockup.png" class="project__img" alt="">
-              <div class="project__wrapper--bg"></div>
+              <img
+                src="./assets/blinker mockup.png"
+                class="project__img"
+                alt="Oasis Coop Website picture"
+              />
               <div class="project__description">
                 <h3 class="project__description--title">
-                  Google In-Store
+                  Oasis Synergistic Technologies Website
                 </h3>
                 <h4 class="project__description--sub-title">
-                  Html, CSS, JavaScript, Vue, Vuex
+                  Godaddy, HTML, JavaScript, Airtable
                 </h4>
                 <p class="project__description--para">
-                  Google In-Store is a platform allowing Google retail employees to report any issues with their
-                  store products. Once an issue is reported, it is posted to an API which populates a separate
-                  platform's frontend - which is used by Google's vendors to fix the issue as soon as possible. I was
-                  the sole
-                  front-end developer of this application.
+                  This was the first project I ever did for a company. For
+                  this project I used Godaddy and simple HTML to create the
+                  layout of the page. I also used airtable to create the
+                  company's database and connect it to the webpage. Oasis is
+                  an agriculture cooperative with more then 100 partners in
+                  the cooperative. I also used Canva for all the pictures in
+                  the page.
                 </p>
                 <div class="project__description--links">
-                  <a href="https://googleinstore.com.au/" class="project__description--link">
+                  <a
+                    target="_blank"
+                    href="https://www.oasiscoop.com"
+                    class="project__description--link"
+                  >
                     <i class="fas fa-link"></i>
                   </a>
                 </div>
@@ -221,54 +228,79 @@
           </li>
           <li class="project">
             <div class="project__wrapper">
-              <img src="./assets/Frontend Simplified.png" class="project__img" alt="">
-              <div class="project__wrapper--bg"></div>
+              <img
+                src="./assets/Frontend Simplified.jpg"
+                class="project__img"
+                alt="Mike Fitness's E-commerce"
+              />
               <div class="project__description">
                 <h3 class="project__description--title">
-                  Frontend Simplified
+                  Mike Fitness's E-commerce
                 </h3>
                 <h4 class="project__description--sub-title">
-                  Html, CSS, JavaScript, Vue, Vuex, Nuxt, Firebase
+                  Html, CSS, JavaScript
                 </h4>
                 <p class="project__description--para">
-                  Frontend Simplified is a side project built to not only teach people how to code, but teach them how
-                  to get job ready in the quickest way possible. Users of this platform can join my 2,300+ member
-                  community
-                  including engineers from Google, Canva, Atlassian, Apple, Microsoft and Salesforce.
-                  The entire platform and courses was built by myself
-                  and I'm
-                  planning to
-                  release the MVP in the next few weeks.
+                  This is a personal e-commerce page that is not meant to be
+                  fully funcitonal yet. I will use this to sell my workout
+                  programs to my followers. For this page I used HTML,
+                  CSS and JavaScript. For now all the buying capabilities will
+                  be disabled.
                 </p>
+                <div class="project__description--links">
+                  <a
+                    href="https://github.com/michaelrodriguezg99/Mike-Fitness-Website.git"
+                    target="_blank"
+                    class="project__description--link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://michaelrodriguezg99.github.io/Mike-Fitness-Website/"
+                    class="project__description--link"
+                  >
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </li>
           <li class="project">
             <div class="project__wrapper">
-              <img src="./assets/Eportfolio YT.png" class="project__img" alt="">
-              <div class="project__wrapper--bg"></div>
+              <img
+                src="./assets/Eportfolio YT.png"
+                class="project__img"
+                alt="Isabela Tango Fest Website Picture"
+              />
               <div class="project__description">
                 <h3 class="project__description--title">
-                  E-Portfolio YouTube Tutorial
+                  Isabela Tango Fest Website
                 </h3>
                 <h4 class="project__description--sub-title">
-                  Html, CSS
+                  Html, CSS, JavaScript
                 </h4>
                 <p class="project__description--para">
-                  E-Portfolio built to help my social media followers learn basic CSS properties, layout and best
-                  practises -
-                  along with including tips along the way to help them land their first job.
+                  The Isabela Tango Fest is a renowned festival that takes
+                  place in Isabela, Puerto Rico. This festival gave me the
+                  opportunity to use my knowledge of Frontend development to
+                  make their buisness shine in their 25th year running said
+                  festival. For this proyect I used advance HTML for the
+                  structure of the page and CSS for the styling. I also used
+                  advanced JavaScript for the animations.
                 </p>
                 <div class="project__description--links">
-                  <a href="https://www.youtube.com/watch?v=C8BlRjB3vYI" target="_blank"
-                    class="project__description--link">
-                    <i class="fab fa-youtube"></i>
-                  </a>
-                  <a href="https://github.com/davidbr4gg/davidbr4gg.github.io" target="_blank"
-                    class="project__description--link">
+                  <a
+                    href="https://github.com/michaelrodriguezg99/IsabelaTangoFestWebsite.git"
+                    target="_blank"
+                    class="project__description--link"
+                  >
                     <i class="fab fa-github"></i>
                   </a>
-                  <a href="https://davidbr4gg.github.io/" target="_blank" class="project__description--link">
+                  <a
+                    href="https://michaelrodriguezg99.github.io/IsabelaTangoFestWebsite/"
+                    target="_blank"
+                    class="project__description--link"
+                  >
                     <i class="fas fa-link"></i>
                   </a>
                 </div>

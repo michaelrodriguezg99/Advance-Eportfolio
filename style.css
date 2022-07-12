@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -29,11 +29,12 @@ button {
 }
 
 section {
-  background-color: rgb(245, 245, 245);
+  background-color: #fff;
   transition: all 300ms ease;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   background-color: #242424;
   color: #fff;
@@ -57,11 +58,13 @@ label {
   font-weight: bold;
 }
 
-input:hover, textarea:hover {
+input:hover,
+textarea:hover {
   border-color: #dcdfe6;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #f06449;
 }
 
@@ -91,14 +94,14 @@ input:focus, textarea:focus {
 }
 
 .title {
-  font-size: 120px;
+  font-size: 80px;
   margin-bottom: 12px;
   text-align: left;
   line-height: 1;
 }
 
-.orange {
-  color: #f06449 !important;
+.text__blue {
+  color: #219ebc !important;
 }
 
 .link__hover-effect {
@@ -149,16 +152,19 @@ nav,
 .dark-theme .section__sub-title,
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-adjust,
-.dark-theme .header__para
-{
+.dark-theme .header__para {
   color: white;
 }
 .dark-theme section {
   background-color: #242424;
 }
 .dark-theme #personal-logo {
-  filter: none;
+  background-image: url(./assets/Copia\ de\ footer-logo.png);
+  background-position: cover;
+  background-repeat: no-repeat;
+  transition: all 300ms ease;
 }
+
 .dark-theme .scroll__icon {
   border-color: white;
 }
@@ -201,7 +207,7 @@ nav,
 }
 
 .social__link {
-  background-color: #f06449;
+  background-color: #219ebc;
   color: white;
   padding: 6px;
   width: 32px;
@@ -259,7 +265,7 @@ nav,
   0% {
     transform: translateY(3px);
   }
-  
+
   100% {
     transform: translateY(-3px);
   }
@@ -285,7 +291,9 @@ nav {
 #personal-logo {
   width: 50px;
   height: 50px;
-  filter: invert(1);
+  background: url(./assets/Copia\ de\ Michael-Rodriguez_logo.png) center center no-repeat ;
+  background-size: cover;
+  transition: all 10ms ease;
 }
 
 .nav__link--list {
@@ -326,7 +334,7 @@ nav {
   z-index: -1;
   transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
 }
-.modal--open .modal{
+.modal--open .modal {
   z-index: 60;
   box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
   visibility: visible;
@@ -342,8 +350,7 @@ nav {
 }
 
 .modal--open .modal__about,
-.modal--open .modal__contact
-{
+.modal--open .modal__contact {
   transform: translateX(0%);
 }
 
@@ -535,7 +542,7 @@ nav {
 }
 
 .project__wrapper:hover .project__wrapper--bg {
-  opacity: 0.7; 
+  opacity: 0.7;
   visibility: visible;
 }
 
@@ -546,7 +553,7 @@ nav {
   width: 100%;
   height: 100%;
   background-color: #1c1d25;
-  opacity: 0; 
+  opacity: 0;
   transition: all 450ms ease;
   visibility: hidden;
 }
@@ -691,7 +698,7 @@ footer {
 /* Small phones, tablets, large smart phones */
 @media (max-width: 768px) {
   .title {
-    font-size: 80px;
+    font-size: 54px;
   }
   .header__para {
     font-size: 20px;
@@ -713,7 +720,7 @@ footer {
 /* Small phones */
 @media (max-width: 480px) {
   .title {
-    font-size: 52px;
+    font-size: 32px;
   }
   .header__para {
     font-size: 18px;

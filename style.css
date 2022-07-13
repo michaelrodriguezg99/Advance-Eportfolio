@@ -155,7 +155,7 @@ nav,
 .dark-theme .header__para {
   color: white;
 }
-.dark-theme section {
+.dark-theme section{
   background-color: #242424;
 }
 .dark-theme #personal-logo {
@@ -506,7 +506,7 @@ nav {
 }
 
 .project {
-  margin-bottom: 135px;
+  padding-bottom: 135px;
 }
 
 .project__img {

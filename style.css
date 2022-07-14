@@ -201,6 +201,26 @@ nav,
   max-width: 450px;
 }
 
+.language__name--header {
+  color: #242424;
+}
+
+.language__name--header {
+  position: absolute;
+  bottom: -20px;
+  transform: scale(0);
+  transition: all 300ms ease;
+}
+
+.social__link:hover .language__name--header {
+  transform: scale(1.5);
+}
+
+.social__link:hover {
+  filter: brightness(90%);
+  transform: scale(0.9);
+}
+
 .social__list {
   margin-top: 16px;
   display: flex;
@@ -512,6 +532,7 @@ nav {
 .project__img {
   width: 100%;
   transition: all 600ms ease;
+  image-rendering: high-quality;
 }
 
 .project__wrapper {

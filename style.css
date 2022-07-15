@@ -155,7 +155,7 @@ nav,
 .dark-theme .header__para {
   color: white;
 }
-.dark-theme section{
+.dark-theme section {
   background-color: #242424;
 }
 .dark-theme #personal-logo {
@@ -222,8 +222,17 @@ nav,
 }
 
 .social__list {
-  margin-top: 16px;
+  padding-top: 20px;
   display: flex;
+  position: relative;
+}
+
+.resume__arrow{
+  color: #219ebc;
+  position: absolute;
+  top: 0;
+  left: 96.5px;
+  animation: scroll 1000ms infinite alternate-reverse;
 }
 
 .social__link {

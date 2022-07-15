@@ -328,6 +328,7 @@ nav {
 
 .nav__link--list {
   display: flex;
+  justify-content: center;
 }
 
 .nav__link {

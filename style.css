@@ -765,6 +765,14 @@ footer {
   .modal__half {
     width: 100%;
   }
+.shape{
+    font-size: 12px;
+  }
+  .shape--3
+  .shape--4{
+  display: none;
+  }
+
 }
 
 /* Small phones */

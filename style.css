@@ -681,6 +681,7 @@ footer {
   color: #fc2e20;
   top: 15vh;
   left: 50vw;
+  visibility: hidden;
 }
 .shape--2 {
   font-size: 25px;

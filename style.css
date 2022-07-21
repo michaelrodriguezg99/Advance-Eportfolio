@@ -765,7 +765,7 @@ footer {
     width: 100%;
   }
   .shape {
-    font-size: 12px;
+    visibility: hidden;
   }
 }
 

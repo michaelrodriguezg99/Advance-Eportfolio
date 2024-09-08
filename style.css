@@ -575,6 +575,7 @@ nav {
   display: inline-block;
   width: 33%;
   padding: 5px;
+  overflow-x: hidden;
 }
 
 /* Apply fullscreen-mode class to image when in fullscreen */
@@ -873,6 +874,10 @@ footer {
   .title {
     font-size: 54px;
   }
+  .image-container{
+    width: 100%;
+  }
+
   .header__para {
     font-size: 20px;
   }
@@ -898,6 +903,7 @@ footer {
   .title {
     font-size: 32px;
   }
+  
   .header__para {
     font-size: 18px;
   }

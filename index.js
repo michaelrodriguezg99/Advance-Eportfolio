@@ -15,6 +15,48 @@ function moveBackground(event) {
   }
 }
 
+function viewInFullScreen(button) {
+  const targetImageId = button.getAttribute('data-target'); // Get the image ID from the button's data-target attribute
+  const image = document.getElementById(targetImageId); // Find the image element by its ID
+
+  // Add a class to remove hover effects
+  image.classList.add('fullscreen-mode');
+  image.classList.remove('project__img-sm');
+
+  if (image.requestFullscreen) {
+    image.requestFullscreen();
+  } else if (image.webkitRequestFullscreen) { /* Safari */
+    image.webkitRequestFullscreen();
+  } else if (image.msRequestFullscreen) { /* IE11 */
+    image.msRequestFullscreen();
+  }
+
+  // Listen for when the user exits full-screen mode
+  document.addEventListener('fullscreenchange', function () {
+    if (!document.fullscreenElement) {
+      // Remove class when exiting full screen
+      image.classList.remove('fullscreen-mode');
+      image.classList.add('project__img-sm');
+    }
+  });
+
+  document.addEventListener('webkitfullscreenchange', function () { /* Safari */
+    if (!document.webkitFullscreenElement) {
+      // Remove class when exiting full screen
+      image.classList.remove('fullscreen-mode');
+      image.classList.add('project__img-sm');
+    }
+  });
+
+  document.addEventListener('msfullscreenchange', function () { /* IE11 */
+    if (!document.msFullscreenElement) {
+      // Remove class when exiting full screen
+      image.classList.remove('fullscreen-mode');
+      image.classList.add('project__img-sm');
+    }
+  });
+}
+
 function toggleContrast() {
   contrastToggle = !contrastToggle;
   if (contrastToggle) {

@@ -874,8 +874,21 @@ footer {
   .title {
     font-size: 54px;
   }
+
   .image-container{
     width: 100%;
+  }
+
+  .image-container{
+    pointer-events: none; /* Disable all pointer events including clicks */
+  }
+  
+  .download-btn {
+    pointer-events: none; /* Disable all pointer events including clicks */
+  }
+
+  .fullscreen-btn {
+    pointer-events: none; /* Disable all pointer events including clicks */
   }
 
   .header__para {
